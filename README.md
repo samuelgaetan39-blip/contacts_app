@@ -34,7 +34,7 @@ avec l'API randomuser.me.
 
 ```bash
 # Cloner le dépôt
-git clone <url-du-repo>
+git clone https://github.com/samuelgaetan39-blip/contacts_app.git
 cd contacts_app
 
 # Installer les dépendances
