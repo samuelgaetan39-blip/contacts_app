@@ -1,0 +1,55 @@
+name: contacts_app
+description: Application de gestion de contacts moderne.
+
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  http: ^1.2.1
+  image_picker: ^1.1.2
+  permission_handler: ^11.3.1
+  shared_preferences: ^2.3.2
+  provider: ^6.1.2
+  uuid: ^4.4.2
+  path_provider: ^2.1.4
+  path: ^1.9.0
+
+  # Partage de contenu (point 1)
+  share_plus: ^10.0.2
+
+  # Lancement d'appels, SMS, e-mails (point 6)
+  url_launcher: ^6.3.0
+
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+  # Icône de lanceur d'application (point 7)
+  flutter_launcher_icons: ^0.14.1
+
+# Configuration de l'icône de lancement (point 7)
+# Placer une image 1024×1024 px à assets/images/app_icon.png
+# puis exécuter : dart run flutter_launcher_icons
+flutter_launcher_icons:
+  android: "ic_launcher"
+  ios: true
+  image_path: "assets/images/app_icon.png"
+  min_sdk_android: 21
+  adaptive_icon_background: "#007AFF"
+  adaptive_icon_foreground: "assets/images/app_icon.png"
+  web:
+    generate: false
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
